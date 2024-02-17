@@ -30,12 +30,20 @@ coffeeCups = int(input ("How many cups of coffee do you want? "))
 print()
 print ("--------------------------")
 print()
-                    
+
+print ("Each 15oz cup of lemonade costs $4.25")
+lemonadeCups = int(input ("How many cups of lemonade do you want? "))
+
+print()
+print ("--------------------------")
+print()
+
 # This section is the calculating and receipt printing
 muffinCost = muffins * 2.30
 breadCost = breadSlices * 2.80
 coffeeCost = coffeeCups * 3.75
-total = muffinCost + breadCost + coffeeCost
+lemonadeCost = lemonadeCups * 4.25
+total = muffinCost + breadCost + coffeeCost + lemonadeCost
 tax = total * .06
 taxedTotal = 1.06 * total
 print()
@@ -64,10 +72,17 @@ else:
     if coffeeCups >= 1:
         print(coffeeCups, "cups of coffee: $",coffeeCost)
 print()
+if lemonadeCups == 1:
+    print("1 cup of lemonade: $ 4.25")
+else:
+    if lemonadeCups >= 1:
+        print(lemonadeCups, "cups of lemonade: $",lemonadeCost)
+print()
 print("6% tax: $", tax)
 print("--------------------------")
 print("Total: $",taxedTotal)
 print("***********************************")
+print("Thank you for orsering at Jasmine's Cafe!")
 
 # I do ask that I am reffered to as Jasmine
 # and addressed by She/Her pronouns. This
